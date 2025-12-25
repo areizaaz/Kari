@@ -5,41 +5,51 @@
     <title>Un mensaje de Papá Noel</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: radial-gradient(circle at top, #1b2735, #090a0f);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+            color: #eaeaea;
         }
 
         .card {
-            background: white;
-            padding: 30px;
-            max-width: 500px;
+            background: rgba(20, 28, 40, 0.95);
+            padding: 35px;
+            max-width: 520px;
             text-align: center;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 16px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
         }
 
         h1 {
-            color: #c0392b;
+            color: #f1c40f;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #dcdcdc;
         }
 
         button {
-            margin-top: 20px;
-            padding: 12px 20px;
+            margin-top: 25px;
+            padding: 14px 24px;
             font-size: 16px;
-            background-color: #27ae60;
-            color: white;
+            background: linear-gradient(135deg, #1abc9c, #16a085);
+            color: #ffffff;
             border: none;
-            border-radius: 8px;
+            border-radius: 10px;
             cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
         }
 
         button:hover {
-            background-color: #219150;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.6);
         }
     </style>
 </head>
@@ -48,14 +58,15 @@
     <div class="card">
         <h1>🎄 Ho Ho Ho…</h1>
         <p>
-            Querido amigo,<br><br>
-            Lamento mucho no haber podido entregar tu regalo a tiempo.
-            Hubo algunos contratiempos en el Polo Norte y los renos
-            se retrasaron un poco.
+            Querida Karina,<br><br>
+            Esta noche especial quiero pedirte disculpas.
+            El viaje fue más largo de lo esperado y no pude
+            dejar tu regalo a tiempo.
         </p>
         <p>
-            Sin embargo, no quise llegar con las manos vacías,
-            así que te dejé un pequeño adelanto mientras llega el regalo completo.
+            Aun así, no quise irme sin dejarte algo.
+            Aquí tienes un pequeño adelanto, mientras la magia
+            termina su trabajo.
         </p>
 
         <button onclick="abrirAdelanto()">Ver el adelanto 🎁</button>
