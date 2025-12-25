@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Un mensaje de Papá Noel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            max-width: 500px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #c0392b;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            font-size: 16px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #219150;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>🎄 Ho Ho Ho…</h1>
+        <p>
+            Querido amigo,<br><br>
+            Lamento mucho no haber podido entregar tu regalo a tiempo.
+            Hubo algunos contratiempos en el Polo Norte y los renos
+            se retrasaron un poco.
+        </p>
+        <p>
+            Sin embargo, no quise llegar con las manos vacías,
+            así que te dejé un pequeño adelanto mientras llega el regalo completo.
+        </p>
+
+        <button onclick="abrirAdelanto()">Ver el adelanto 🎁</button>
+    </div>
+
+    <script>
+        function abrirAdelanto() {
+            window.open("adelanto.html", "_blank");
+        }
+    </script>
+
+</body>
+</html>
